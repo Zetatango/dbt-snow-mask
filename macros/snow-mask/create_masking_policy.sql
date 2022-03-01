@@ -1,4 +1,4 @@
-{% macro create_masking_policy(resource_type="sources",meta_key="masking_policy") %}
+{% macro create_masking_policy(resource_type="models",meta_key="masking_policy") %}
 
 {% if execute %}
 
