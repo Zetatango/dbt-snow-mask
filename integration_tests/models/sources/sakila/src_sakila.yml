@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: seeds
+    tables:
+      - name: customer
+        columns:
+          - name: first_name
+            meta:
+              masking_policy: mp_conditional_customer_pii
+              mp_conditional_columns: 
+                - store_id 
+                - active
